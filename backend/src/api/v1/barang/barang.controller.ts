@@ -41,8 +41,6 @@ export class BarangController {
     const parsedPage = page ? parseInt(page, 10) : undefined;
     const parsedPageSize = pageSize ? parseInt(pageSize, 10) : undefined;
 
-    console.log('Parsed Page:', parsedPage);
-    console.log('Parsed Page Size:', parsedPageSize);
 
     return this.barangService.findAll(
       req.user.sub,

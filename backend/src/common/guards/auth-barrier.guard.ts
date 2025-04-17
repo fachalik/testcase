@@ -15,21 +15,17 @@ export class AuthBarrier implements CanActivate {
   canActivate(context: ExecutionContext): boolean {
     const request: Request = context.switchToHttp().getRequest();
 
-    console.log('request', request.headers.authorization);
     const authHeader = request.headers.authorization;
 
     if (!authHeader || !authHeader.startsWith('Bearer ')) {
       throw new UnauthorizedException('No token provided');
     }
 
-    // console.log('authHeader', authHeader);
-
     const token = authHeader.split(' ')[1];
 
     try {
       const decoded = this.jwtService.verify(token);
       request.user = decoded;
-      console.log('decode', decoded);
 
       return true;
     } catch {

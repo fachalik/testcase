@@ -38,7 +38,6 @@ const fetchGetBarang = async (
   payload: GetBarangPayload
 ): Promise<GetAllDataResponse> => {
   try {
-    console.log("payload", payload);
     const data = await BarangAPI.getAllBarang(payload);
 
     return data;
