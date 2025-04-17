@@ -5,6 +5,36 @@ This repository contains a full-stack application built with React, Vite, TypeSc
 Frontend: A React-based application using Vite for development and Ant Design for UI components.
 Backend: A NestJS-based API server using Prisma for database management.
 
+## 🖼️ Screenshot
+
+### endpoint
+
+![endpoint](https://raw.githubusercontent.com/fachalik/testcase/c8c5fff63b01e19cde14daa9b6a0d13587e3feca/image/endpoint.png)
+
+### Sign In
+
+![signin](https://raw.githubusercontent.com/fachalik/testcase/c8c5fff63b01e19cde14daa9b6a0d13587e3feca/image/signin.png)
+
+### Register
+
+![register](https://raw.githubusercontent.com/fachalik/testcase/c8c5fff63b01e19cde14daa9b6a0d13587e3feca/image/register.png)
+
+### Dashboard
+
+![dashboard](https://raw.githubusercontent.com/fachalik/testcase/c8c5fff63b01e19cde14daa9b6a0d13587e3feca/image/dashboard.png)
+
+### List Barang
+
+![list-barang](https://raw.githubusercontent.com/fachalik/testcase/c8c5fff63b01e19cde14daa9b6a0d13587e3feca/image/listbarang.png)
+
+### Create Barang
+
+![create-barang](https://raw.githubusercontent.com/fachalik/testcase/c8c5fff63b01e19cde14daa9b6a0d13587e3feca/image/createbarang.png)
+
+### Update Barang
+
+![update-barang](https://raw.githubusercontent.com/fachalik/testcase/c8c5fff63b01e19cde14daa9b6a0d13587e3feca/image/updatebarang.png)
+
 ## Table of Contents
 
 - [Project Structure](#project-structure)
@@ -19,30 +49,32 @@ Backend: A NestJS-based API server using Prisma for database management.
 - [License](#license)
 
 ## Project Structure
+
 assistx-test-case/
-├── backend/       # Backend application (NestJS + Prisma)
-├── frontend/      # Frontend application (React + Vite)
-└── readme.md      # Project documentation
+├── backend/ # Backend application (NestJS + Prisma)
+├── frontend/ # Frontend application (React + Vite)
+└── readme.md # Project documentation
 
 ## Technologies Used
+
 ## Frontend
 
-- **React**: Library for building user interfaces.  
-- **Vite**: Fast development build tool.  
-- **TypeScript**: Strongly typed JavaScript.  
-- **Ant Design**: UI component library.  
-- **Zustand**: State management.  
-- **React Query**: Data fetching and caching.  
-- **Zod**: Schema validation.  
+- **React**: Library for building user interfaces.
+- **Vite**: Fast development build tool.
+- **TypeScript**: Strongly typed JavaScript.
+- **Ant Design**: UI component library.
+- **Zustand**: State management.
+- **React Query**: Data fetching and caching.
+- **Zod**: Schema validation.
 
 ## Backend
 
-- **NestJS**: Progressive Node.js framework.  
-- **Prisma**: ORM for database management.  
-- **MySQL**: Database.  
-- **JWT**: Authentication.  
-- **Helmet**: Security middleware.  
-- **Swagger**: API documentation.  
+- **NestJS**: Progressive Node.js framework.
+- **Prisma**: ORM for database management.
+- **MySQL**: Database.
+- **JWT**: Authentication.
+- **Helmet**: Security middleware.
+- **Swagger**: API documentation.
 
 <!-- List the main features of the project. -->
 
@@ -53,60 +85,60 @@ _Below is an example of how you can instruct your audience on installing and set
 ### Backend Setup
 
 1. Navigate to the backend folder:
-    ```sh
-    cd backend
-    ```
+   ```sh
+   cd backend
+   ```
 2. Install dependencies
-    ```sh
-    yarn install
-    ```
+   ```sh
+   yarn install
+   ```
 3. Configure the environment variables: Create a .env file in the backend folder and add the following:
-    ```sh
-    DATABASE_URL="mysql://root:@127.0.0.1:3306/assistx-test"
-    PORT=3000
-    JWT_SECRET="assistx-testcase"
-    ```
+   ```sh
+   DATABASE_URL="mysql://root:@127.0.0.1:3306/assistx-test"
+   PORT=3000
+   JWT_SECRET="assistx-testcase"
+   ```
 4. Run Prisma migrations:
-    ```sh
-    npx prisma migrate dev
-    ```
+   ```sh
+   npx prisma migrate dev
+   ```
 5. Start the backend server:
-    ```sh
-    yarn start:dev
-    ```
+   ```sh
+   yarn start:dev
+   ```
 6. The backend server will run at http://localhost:3000.
 
 ### Frontend Setup
 
 1. Navigate to the frontend folder
-    ```sh
-    cd frontend
-    ```
+   ```sh
+   cd frontend
+   ```
 2. Install dependencies
-    ```sh
-    yarn install
-    ```
+   ```sh
+   yarn install
+   ```
 3. Configure the environment variables: Create a .env file in the frontend folder and add the following:
-    ```sh
-    VITE_APP_APP_API_URL=http://localhost:3000/api
-    ```
+   ```sh
+   VITE_APP_APP_API_URL=http://localhost:3000/api
+   ```
 4. Start the frontend development server:
-    ```sh
-    yarn dev
-    ```
+   ```sh
+   yarn dev
+   ```
 5. The frontend application will run at http://localhost:5173
 
-
 ## Usage
+
 1. Register: Create a new user account.
 2. Login: Authenticate with your email and password.
 3. Dashboard: View statistics and insights.
 4. Barang Management:
- - Create, update, delete, and view items (Barang).
- - Paginated list of items.
+
+- Create, update, delete, and view items (Barang).
+- Paginated list of items.
+
 5. Authentication: JWT-based authentication for secure API access.
-
-
 
 ## API Documentation
 
@@ -119,6 +151,7 @@ http://localhost:3000/api/docs
 ## Features
 
 ### Frontend
+
 - Authentication: Login and registration with form validation.
 - Dashboard: Displays user and item statistics.
 - CRUD Operations: Create, read, update, and delete items.
@@ -127,6 +160,7 @@ http://localhost:3000/api/docs
 - UI Components: Ant Design for a polished user interface.
 
 ### Backend
+
 - Authentication: JWT-based authentication.
 - Database: Prisma ORM with MySQL.
 - Validation: DTOs with class-validator.
@@ -137,6 +171,7 @@ http://localhost:3000/api/docs
 ## Folder Structure
 
 ### Backend
+
 ```sh
 backend/
 ├── prisma/                 # Prisma schema and migrations
@@ -154,6 +189,7 @@ backend/
 ```
 
 ### Frontend
+
 ```sh
 frontend/
 ├── src/
@@ -172,4 +208,5 @@ frontend/
 ```
 
 ### License
+
 This project is licensed under the MIT License.
